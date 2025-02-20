@@ -1,6 +1,4 @@
 
-# Flow-Craft
-
 # FlowCraft
 
 FlowCraft is a web application that allows users to generate flowcharts based on a given scenario description. The application is built using React for the frontend and Node.js with Express for the backend.
