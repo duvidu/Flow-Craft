@@ -1,0 +1,149 @@
+/* Ensure the full screen container with background video */
+.input-form-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Background video styles */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay for better readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar styling */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);  /* Slight dark background for readability */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    position: relative;
+    left: -570px;
+    margin: 0 auto;
+
+}
+
+/* Centered form container */
+.form-wrapper {
+    position: relative;
+    background: rgba(255, 255, 255, 0.658);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 50px; /* Adjusted to not overlap with navbar */
+}
+
+/* Heading style */
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Textarea style */
+.input-textarea {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 8px rgba(79, 70, 229, 0.4);
+}
+
+/* Submit button style */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #000000, #454444); /* Black to ash gradient */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4); /* Optional hover effect */
+}
+
+
+
+.navbar-links {
+    display: flex;
+    position: relative;
+    left: -60px;
+    gap: 20px;
+}
+
+/* Navbar Links */
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #6366f1; /* Highlight color on hover */
+}
+
+/* Notification Icon */
+.notification-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.notification-icon:hover {
+    transform: scale(1.2);
+}
+.navbar-logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Keeps aspect ratio */
+}
